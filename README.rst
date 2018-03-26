@@ -1,12 +1,12 @@
 BEL Commons Manuscript
 ======================
-This repository contains code, resources, and tutorials described in "BEL Commons: an environment for exploration 
-and analysis of networks encoded in Biological Expression Language."
+This repository contains code, resources, and tutorials described in *BEL Commons: an environment for exploration 
+and analysis of networks encoded in Biological Expression Language*.
 
 Structure of Repository
 -----------------------
-- data: several folders containing instructions how to automatically download and process differential gene expression experiments
-- screenshots: the screenshots for the tutorial (see below)
+- `data <https://github.com/cthoyt/bel-commons-manuscript/tree/master/data>`_: several folders containing instructions how to automatically download and process differential gene expression experiments
+- `screenshots <https://github.com/cthoyt/bel-commons-manuscript/tree/master/screenshots>`_: the screenshots for the tutorial (see below)
 
 Reproducing the UCMPA Analysis
 ------------------------------

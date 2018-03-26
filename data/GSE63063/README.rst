@@ -30,7 +30,7 @@ If that doesn't work, try:
 
 Execute
 *******
-``cd`` into the directory and user ``rscript process.r``
+``cd`` into the directory and user ``rscript process.R``
 
 Reference
 ---------

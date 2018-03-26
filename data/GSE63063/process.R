@@ -59,7 +59,7 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust="fdr", sort.by="B", number=250)
 
 tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","t","B","logFC","Gene.symbol","Gene.title"))
-write.table(tT, file='AD_GSE63063_GPL6947.tsv', row.names=F, sep="\t")
+write.table(tT, file='GSE63063_GPL6947_AD.tsv', row.names = F, sep = "\t", quote = FALSE)
 
 
 ###########################
@@ -113,7 +113,7 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust="fdr", sort.by="B", number=250)
 
 tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","t","B","logFC","Gene.symbol","Gene.title"))
-write.table(tT, file="MCI_GSE63063_GPL6947.tsv", row.names=F, sep="\t")
+write.table(tT, file="GSE63063_GPL6947_MCI.tsv", row.names = F, sep = "\t", quote = FALSE)
 
 
 ################ Boxplot ############################
@@ -206,7 +206,7 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust="fdr", sort.by="B", number=250)
 
 tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","t","B","logFC","Gene.symbol","Gene.title"))
-write.table(tT, file="AD_GSE63063_GPL10558.tsv", row.names=F, sep="\t")
+write.table(tT, file="GSE63063_GPL10558_AD.tsv", row.names=F, sep="\t", quote = FALSE)
 
 ###########################
 # Control vs MCI comparison
@@ -260,7 +260,7 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust="fdr", sort.by="B", number=250)
 
 tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","t","B","logFC","Gene.symbol","Gene.title"))
-write.table(tT, file="MCI_GSE63063_GPL10558.tsv", row.names=F, sep="\t")
+write.table(tT, file="GSE63063_GPL10558_MCI.tsv", row.names=F, sep="\t", quote = FALSE)
 
 
 ################ Boxplot ############################

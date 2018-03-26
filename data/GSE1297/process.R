@@ -47,7 +47,7 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust.method = "fdr", sort.by = "B", number = 250)
 
 tT <- subset(tT, select = c("ID", "adj.P.Val", "P.Value", "t", "B", "logFC", "Gene.symbol", "Gene.title"))
-write.table(tT, file = 'incipient.tsv', row.names = F, sep = "\t")
+write.table(tT, file = 'incipient.tsv', row.names = F, sep = "\t", quote = FALSE)
 
 
 ################################################################
@@ -90,7 +90,7 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust = "fdr", sort.by = "B", number = 250)
 
 tT <- subset(tT, select = c("ID", "adj.P.Val", "P.Value", "t", "B", "logFC", "Gene.symbol", "Gene.title"))
-write.table(tT, file = 'moderate.tsv', row.names = F, sep = "\t")
+write.table(tT, file = 'moderate.tsv', row.names = F, sep = "\t", quote = FALSE)
 
 
 ################################################################
@@ -133,7 +133,7 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust = "fdr", sort.by = "B", number = 250)
 
 tT <- subset(tT, select = c("ID", "adj.P.Val", "P.Value", "t", "B", "logFC", "Gene.symbol", "Gene.title"))
-write.table(tT, file = 'severe.tsv', row.names = F, sep = "\t")
+write.table(tT, file = 'severe.tsv', row.names = F, sep = "\t", quote = FALSE)
 
 
 ################################################################
@@ -159,7 +159,7 @@ fl <- as.factor(sml)
 labels <- c("control", "severe", "moderate", "incipient")
 
 # set parameters and draw the plot
-palette(c("#FF00000", "#FFFF00", "#00FFFF", "#00FF00", "#0000FF"))
+palette(c("#FF0000", "#FFFF00", "#00FFFF", "#00FF00", "#0000FF"))
 dev.new(width = 4 + dim(gset)[[2]] / 5, height = 6)
 par(mar = c(2 + round(max(nchar(sampleNames(gset))) / 2), 4, 2, 1))
 title <- paste ("GSE1297", '/', annotation(gset), " selected samples", sep = '')

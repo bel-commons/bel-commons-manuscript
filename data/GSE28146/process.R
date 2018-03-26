@@ -49,7 +49,7 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust="fdr", sort.by="B", number=250)
 
 tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","t","B","logFC","Gene.symbol","Gene.title"))
-write.table(tT, file='incipient.tsv', row.names=F, sep="\t")
+write.table(tT, file='incipient.tsv', row.names=F, sep="\t", quote = FALSE)
 
 ################################################################
 # Create moderate versus control comparison
@@ -96,7 +96,7 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust="fdr", sort.by="B", number=250)
 
 tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","t","B","logFC","Gene.symbol","Gene.title"))
-write.table(tT, file='moderate.tsv', row.names=F, sep="\t")
+write.table(tT, file='moderate.tsv', row.names=F, sep="\t", quote = FALSE)
 
 ################################################################
 # Create severe versus control comparison
@@ -143,4 +143,4 @@ fit2 <- eBayes(fit2, 0.01)
 tT <- topTable(fit2, adjust="fdr", sort.by="B", number=250)
 
 tT <- subset(tT, select=c("ID","adj.P.Val","P.Value","t","B","logFC","Gene.symbol","Gene.title"))
-write.table(tT, file='severe.tsv', row.names=F, sep="\t")
+write.table(tT, file='severe.tsv', row.names=F, sep="\t", quote = FALSE)

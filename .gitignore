@@ -2,3 +2,6 @@
 .DS_Store
 *.pdf
 .idea
+data/GSE1297/manifest.json
+data/GSE28146/manifest.json
+data/GSE63063/manifest.json

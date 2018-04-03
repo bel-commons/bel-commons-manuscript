@@ -5,7 +5,7 @@
     "gene_column": "Gene.symbol",
     "data_column": "logFC",
     "sep": "\t",
-    "public": true
+    "public": false
   },
   {
     "source_name": "GSE63063_GPL6947_MCI.tsv",
@@ -13,7 +13,7 @@
     "gene_column": "Gene.symbol",
     "data_column": "logFC",
     "sep": "\t",
-    "public": true
+    "public": false
   },
   {
     "source_name": "GSE63063_GPL10558_AD.tsv",
@@ -21,7 +21,7 @@
     "gene_column": "Gene.symbol",
     "data_column": "logFC",
     "sep": "\t",
-    "public": true
+    "public": false
   },
   {
     "source_name": "GSE63063_GPL10558_MCI.tsv",
@@ -29,6 +29,6 @@
     "gene_column": "Gene.symbol",
     "data_column": "logFC",
     "sep": "\t",
-    "public": true
+    "public": false
   }
 ]

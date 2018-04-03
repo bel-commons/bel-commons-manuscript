@@ -5,7 +5,8 @@ which is slightly modified from the output from GEO2R on experiment for `GSE6306
 It comes from the public AddNeuroMed and has control, mild cognitive impairment (MCI), and Alzheimer's disease (AD)
 patients.
 
-The metadata associated with these three files is stored in ``metadata.json``.
+The metadata associated with these three files is stored in ``metadata.json``. *Note* in this file, these experiments
+are marked as not public. Feel free to modify this!
 
 How to Run
 ----------

@@ -1,12 +1,15 @@
-BEL Commons Manuscript
-======================
-This repository contains code, resources, and tutorials described in *BEL Commons: an environment for exploration 
-and analysis of networks encoded in Biological Expression Language*.
+BEL Commons Manuscript (2018)
+=============================
+This repository contains code, resources, and tutorials described in [1]_.
+
+.. [1] Hoyt, C. T., Domingo-Fernández, D., & Hofmann-Apitius, M. (2018). `BEL Commons: an environment for 
+       exploration and analysis of networks encoded in Biological Expression Language 
+       <https://doi.org/10.1093/database/bay126>`_. Database, 2018(3), 1–11. 
 
 Structure of Repository
 -----------------------
-- `data <https://github.com/cthoyt/bel-commons-manuscript/tree/master/data>`_: several folders containing instructions how to automatically download and process differential gene expression experiments
-- `screenshots <https://github.com/cthoyt/bel-commons-manuscript/tree/master/screenshots>`_: the screenshots for the tutorial (see below)
+- `data <https://github.com/bel-commons/bel-commons-manuscript/tree/master/data>`_: several folders containing instructions how to automatically download and process differential gene expression experiments
+- `screenshots <https://github.com/bel-commons/bel-commons-manuscript/tree/master/screenshots>`_: the screenshots for the tutorial (see below)
 
 Reproducing the UCMPA Analysis
 ------------------------------
@@ -14,9 +17,9 @@ This tutorial shows how to reproduce the analysis shown in Figure 5 of the manus
 
 Step 1
 ~~~~~~
-From the main page on `BEL Commons <https://pybel.scai.fraunhofer.de>`_, find the query builder.
+From the main page on `BEL Commons <https://bel-commons.scai.fraunhofer.de>`_, find the query builder.
 
-.. image:: https://raw.githubusercontent.com/cthoyt/bel-commons-manuscript/master/screenshots/ucmpa_step_1.png
+.. image:: https://raw.githubusercontent.com/bel-commons/bel-commons-manuscript/master/screenshots/ucmpa_step_1.png
         :alt: Step 1: How to find the query builder
         :width: 100%
         :align: center
@@ -25,7 +28,7 @@ Step 2
 ~~~~~~
 Use the search box to find the example NeuroMMSig AD subgraphs. Click their radio boxes to include in the query
 
-.. image:: https://raw.githubusercontent.com/cthoyt/bel-commons-manuscript/master/screenshots/ucmpa_step_2.png
+.. image:: https://raw.githubusercontent.com/bel-commons/bel-commons-manuscript/master/screenshots/ucmpa_step_2.png
         :alt: Step 2: Select networks
         :width: 100%
         :align: center
@@ -34,7 +37,7 @@ Step 3
 ~~~~~~
 This query does not need any seeding, so scroll down to "Filters and Mutations." As a pre-processing step, use the "Filters and Mutations" box to add functions to remove MGI nodes, RGD nodes, collapse on central dogma, and rewire variants.
 
-.. image:: https://raw.githubusercontent.com/cthoyt/bel-commons-manuscript/master/screenshots/ucmpa_step_3.png
+.. image:: https://raw.githubusercontent.com/bel-commons/bel-commons-manuscript/master/screenshots/ucmpa_step_3.png
         :alt: Step 3: Add filters and mutations
         :width: 100%
         :align: center
@@ -43,7 +46,7 @@ Step 4
 ~~~~~~
 Submit the query
 
-.. image:: https://raw.githubusercontent.com/cthoyt/bel-commons-manuscript/master/screenshots/ucmpa_step_4.png
+.. image:: https://raw.githubusercontent.com/bel-commons/bel-commons-manuscript/master/screenshots/ucmpa_step_4.png
         :alt: Step 4: Submit the query
         :width: 100%
         :align: center
@@ -52,7 +55,7 @@ Step 5
 ~~~~~~
 Click the "analyze" button to go to the data upload page
 
-.. image:: https://raw.githubusercontent.com/cthoyt/bel-commons-manuscript/master/screenshots/ucmpa_step_5.png
+.. image:: https://raw.githubusercontent.com/bel-commons/bel-commons-manuscript/master/screenshots/ucmpa_step_5.png
         :alt: Step 5: Go to analysis page
         :width: 100%
         :align: center
@@ -63,7 +66,7 @@ Upload a differential gene expression file. Several examples are included in thi
 
 If the data is malformed, you'll get a warning.
 
-.. image:: https://raw.githubusercontent.com/cthoyt/bel-commons-manuscript/master/screenshots/ucmpa_step_6.png
+.. image:: https://raw.githubusercontent.com/bel-commons/bel-commons-manuscript/master/screenshots/ucmpa_step_6.png
         :alt: Step 6: Upload data
         :width: 100%
         :align: center
@@ -78,7 +81,7 @@ Step 8
 ~~~~~~
 Navigate to "My Activity" from the top of the browser
 
-.. image:: https://raw.githubusercontent.com/cthoyt/bel-commons-manuscript/master/screenshots/ucmpa_step_8.png
+.. image:: https://raw.githubusercontent.com/bel-commons/bel-commons-manuscript/master/screenshots/ucmpa_step_8.png
         :alt: Step 8: Navigate to "My Activity"
         :width: 100%
         :align: center
@@ -87,7 +90,7 @@ Step 9
 ~~~~~~
 Scroll to "My Experiments" and click "View Comparison"
 
-.. image:: https://raw.githubusercontent.com/cthoyt/bel-commons-manuscript/master/screenshots/ucmpa_step_9.png
+.. image:: https://raw.githubusercontent.com/bel-commons/bel-commons-manuscript/master/screenshots/ucmpa_step_9.png
         :alt: Step 9: Navigate to "My Activity"
         :width: 100%
         :align: center
@@ -97,7 +100,7 @@ Step 10
 ~~~~~~~
 Interpret the experiments (k-means clustering can be added by appending ``?clusters=5`` to the end of the URL)
 
-.. image:: https://raw.githubusercontent.com/cthoyt/bel-commons-manuscript/master/screenshots/ucmpa_step_10.png
+.. image:: https://raw.githubusercontent.com/bel-commons/bel-commons-manuscript/master/screenshots/ucmpa_step_10.png
         :alt: Step 10: Interpretation
         :width: 100%
         :align: center
